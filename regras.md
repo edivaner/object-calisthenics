@@ -16,12 +16,22 @@
             IF
                 outro método
         ``
+3. Nunca usar ELSE
+    3.1.  Early Return 
+            - Consiste em não adicionar else's nos If's: Estruturar o código para que o fluxo sempre tenha um retorno fixo caso nunca entre em um if (geralmente isso seria os else's), e os If's apenas sendo condições existentes no fluxo de negocio.
 
+    3.2. Fail First
+            - Adicionar logo no início dos métodos os termos para causas falhas na continuidade do código... 'throw new Exception...'.
 
-
-**  Early Return 
-    - Consiste em não adicionar else's nos If's: Estruturar o código para que o fluxo sempre tenha um retorno fixo caso nunca entre em um if (geralmente isso seria os else's), e os If's apenas sendo condições existentes no fluxo de negocio.
-
-** Fail First
-    - Adicionar logo no início dos métodos os termos para causas falhas na continuidade do código... 'throw new Exception...'.
+4. Envolva seus tipos primitivos 
+    4.1 Evitar o uso de tipos primitivos diretamente no código: (string, float, int ...)
+        - Em vez disto, encapsule em classes de valor especifico: (Email $email, Preco $preco, Idade $idade ...)
+    4.2 Não significa encapsular todos:
+        - Encapsular apenas os atributos que, têm signiificado próprio, possuem comportamento ou validações, Podem ser confundifos com outros valores do mesmo tipo primitivo (preço e quantidade, ambos sendo float).
+    
+5. Coleções de primeira classe
+    - Se tenho uma coleção (Array, list) na minha classe, ela será a unica propriedade (Exemplo: na Classe 'WatchedVideos' minha coleção 'Map', é o único atributo).
+    - Evita espalhar lógica de manipulação de coleções pelo código.
+    - Garante que só elementos válidos sejam adicionados.
+    - O nome da classe já explica o propósito da coleção.
 

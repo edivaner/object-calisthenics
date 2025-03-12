@@ -35,3 +35,9 @@
     - Garante que só elementos válidos sejam adicionados.
     - O nome da classe já explica o propósito da coleção.
 
+6. Apenas um "ponto" por linha.
+    - Esse "ponto" significa pontos de acesso, um exemplo é a forma de acessar um método através de outro método vindo de uma classe; 
+    Ex: Antes $student->bd()->diff()->y Agora $student->age(); O metodo age() é que faz os calculos para retornar a idade calculada.
+
+7. Nunca abreviar nomes de variavéis, atributos metodos, funções e etcs.
+    - Quando abreviamos um nome é por que esse nome é muito grande, e isso indica que o método pode está fazendo mais de uma coisa, ou por que o esta havendo muita repetição com esse nome, em ambos os casos é preciso mudar a estrategia e não abreviar.

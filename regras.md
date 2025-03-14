@@ -41,3 +41,12 @@
 
 7. Nunca abreviar nomes de variavéis, atributos metodos, funções e etcs.
     - Quando abreviamos um nome é por que esse nome é muito grande, e isso indica que o método pode está fazendo mais de uma coisa, ou por que o esta havendo muita repetição com esse nome, em ambos os casos é preciso mudar a estrategia e não abreviar.
+
+8. Manter classes e pacotes pequenos.
+    - Tornar a leitura mais fácil e menos desgastante para a visão com "poucas" linhas de código.
+    - Pacotes pequenos facilita a localização dos arquivos do projeto.
+
+9. Tenha no máximo 2 propriedades por classe.
+    - Ter por classe no máximo 2 propriedades em cada classe: Pode ser muito inreal alcançar essa regra, pois em projetos grandes e complexos existe muita abstração.
+    - Para facilitar e alcançar o objetivo desta regra, utilize o agrupamento de propriedade (criar uma classe agrupando as propriedades).
+    - A regra pode aumentar a complexidade em sistemas complexos pode haver a necessidade de criar mais propriedades, e agrupa-los em varias classes aumenta a dificuldade de entender o código.

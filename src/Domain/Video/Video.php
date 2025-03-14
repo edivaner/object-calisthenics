@@ -26,12 +26,12 @@ class Video
     //     }
     // }
 
-    public function getAgeLimit(): int
+    public function ageLimit(): int
     {
         return $this->ageLimit;
     }
 
-    public function setAgeLimit(int $ageLimit): void
+    public function modificateAgeLimit(int $ageLimit): void
     {
         $this->ageLimit = $ageLimit;
     }

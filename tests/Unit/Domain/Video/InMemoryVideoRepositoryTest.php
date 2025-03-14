@@ -16,7 +16,7 @@ class InMemoryVideoRepositoryTest extends TestCase
         // [21, 20, 19, 18, 17]
         for ($i = 21; $i >= 17; $i--) {
             $video = new Video();
-            $video->setAgeLimit($i);
+            $video->modificateAgeLimit($i);
             $repository->add($video);
         }
 
